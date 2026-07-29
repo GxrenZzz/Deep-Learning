@@ -6,3 +6,4 @@ ipykernel
 scikit-learn
 mlxtend
 ipympl
+graphviz

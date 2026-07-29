@@ -1,0 +1,76 @@
+digraph NeuralNetwork {
+	rankdir=LR
+	subgraph cluster_input {
+		label="Input Layer"
+		x1 [label=x1 shape=circle]
+		x2 [label=x2 shape=circle]
+		x3 [label=x3 shape=circle]
+		x4 [label=x4 shape=circle]
+		x5 [label=x5 shape=circle]
+	}
+	subgraph cluster_h1 {
+		label="Hidden Layer 1"
+		h11 [label="" shape=circle]
+		h12 [label="" shape=circle]
+		h13 [label="" shape=circle]
+		h14 [label="" shape=circle]
+	}
+	subgraph cluster_h2 {
+		label="Hidden Layer 2"
+		h21 [label="" shape=circle]
+		h22 [label="" shape=circle]
+		h23 [label="" shape=circle]
+	}
+	subgraph cluster_h3 {
+		label="Hidden Layer 3"
+		h31 [label="" shape=circle]
+		h32 [label="" shape=circle]
+	}
+	subgraph cluster_out {
+		label="Output Layer"
+		o1 [label=y1 shape=circle]
+		o2 [label=y2 shape=circle]
+	}
+	x1 -> h11
+	x1 -> h12
+	x1 -> h13
+	x1 -> h14
+	x2 -> h11
+	x2 -> h12
+	x2 -> h13
+	x2 -> h14
+	x3 -> h11
+	x3 -> h12
+	x3 -> h13
+	x3 -> h14
+	x4 -> h11
+	x4 -> h12
+	x4 -> h13
+	x4 -> h14
+	x5 -> h11
+	x5 -> h12
+	x5 -> h13
+	x5 -> h14
+	h11 -> h21
+	h11 -> h22
+	h11 -> h23
+	h12 -> h21
+	h12 -> h22
+	h12 -> h23
+	h13 -> h21
+	h13 -> h22
+	h13 -> h23
+	h14 -> h21
+	h14 -> h22
+	h14 -> h23
+	h21 -> h31
+	h21 -> h32
+	h22 -> h31
+	h22 -> h32
+	h23 -> h31
+	h23 -> h32
+	h31 -> o1
+	h31 -> o2
+	h32 -> o1
+	h32 -> o2
+}
