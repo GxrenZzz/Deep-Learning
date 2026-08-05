@@ -7,3 +7,5 @@ scikit-learn
 mlxtend
 ipympl
 graphviz
+tensorflow
+keras 
